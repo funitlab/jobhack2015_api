@@ -1,0 +1,76 @@
+/*
+Code written by Nguyen Van Hung at @imrhung
+Feel free to re-use or share it.
+Happy code!!!
+*/
+/* 
+    Created on : Oct 9, 2014, 1:47:31 PM
+    Author     : MrHung
+*/
+
+html, body{
+    height: 100%;
+}
+
+#page-wrapper {
+    background-color: #EB7C7D;
+
+    /* Margin for the footer :) */
+    margin-bottom: 50px;
+
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #636363;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #636363;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+    color: #fff;
+    background-color:#1E6C79;
+    border-color:#1E6C79
+}
+
+.cb_rememberme{
+    /*color: black;*/
+}
+#login-logo{
+    width: 120px;
+}
+
+/*For big screen like PC or laptop, tablet.*/
+@media (min-width: 768px) {
+    #login-logo{
+        margin-top: 50px;
+    }
+}
+
+/*For small screen like mobile phone.*/
+@media (max-width: 767px){
+    #login-logo{
+        margin-top: 10px;
+    }
+}
+
+/*Image handle*/
+.img-center{
+    margin: auto;
+}
+
+/*Hide the logout link*/
+#logout{
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    background-color: #EB7C7D;
+}

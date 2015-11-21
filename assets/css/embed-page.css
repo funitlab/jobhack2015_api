@@ -1,0 +1,73 @@
+/*
+Code written by Nguyen Van Hung at @imrhung
+Feel free to re-use or share it.
+Happy code!!!
+*/
+/* 
+    Created on : Oct 9, 2014, 11:46:20 AM
+    Author     : MrHung
+*/
+html{
+    background: transparent;
+}
+
+body{
+    background-color: transparent;
+}
+
+#page-wrapper {
+    background-color: transparent;
+    width: 810px;
+    margin: auto;
+}
+hr{
+    color: #999;
+    border-top: 1px solid #999;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#credit{
+    width: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: white;
+}
+.margin-bottom-5{
+    margin-bottom: 5px;
+}
+#powered-by{
+    padding-right: 0px;
+    padding-top: 10px;
+    font-size: 15px;
+    color: #AE9100;
+}
+#card-accept{
+    padding-right: 0px;
+    padding-top: 10px;
+    font-size: 11px;
+    color: #AE9100;
+}
+.content{
+    margin-bottom: 10px;
+}
+
+.well{
+    background-color: #D3B31B;
+}
+
+/* Table */
+#item_pay_table{
+    font-size: 13px;
+}
+#item_pay_table>thead>tr {
+  background-color: #808E8E;
+  color: white;
+}
+
+#payment-form {
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+}

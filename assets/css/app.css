@@ -1,0 +1,379 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    padding-top: 0px;
+}
+html, body{
+    height: 100%;
+    background-color: #EB7C7D;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:300
+}
+label.control-label{
+    font-weight:bold
+}
+.control-group.error .control-label,.control-group.error .help-block,.control-group.error .help-inline{
+    font-weight:bold
+}
+
+div.alert p{
+    margin:0
+}
+
+.form-signin,.section_forgot, .form-signup{
+    width:250px;
+    margin:0 auto
+}
+.form-password-forgot{
+    width:600px;
+    margin:0 auto
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+.row {
+    margin-left: -15px;
+}
+/*For no word bug: set min row*/
+table tbody div.row{
+    min-height: 20px;
+}
+
+/*Text style*/
+/* Small text size */
+.text-small {
+    font-size: 11px;
+}
+.text-20{
+    font-size: 20px;
+}
+.text-white{
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+.text-header{
+    font-size: 18px;
+}
+
+/*
+ * Table
+ */
+.cell-center {
+    text-align: center;   
+}
+
+/*
+ * Fade in effect for alert
+ */
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.25s linear;
+    -moz-transition: opacity 0.25s linear;
+    -o-transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear;
+}
+/* Issue: This make bootbox background black
+.fade.in {
+    opacity: 1;
+}
+*/
+
+/* Alert area */
+#alert_placeholder{
+    margin-top: 10px;
+}
+
+
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #F3F3F4;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding:0;
+        margin:0;
+    }
+
+    body {
+        padding:0;
+    }
+}
+
+@media(min-width:768px) {
+
+    #page-wrapper {
+        margin: 0 0 0 0;
+    }
+
+}
+
+/*Main content*/
+.main-content{
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+    margin-top: 70px;
+    padding-bottom: 20px;
+}
+#page-wrapper {
+    background-color: #EB7C7D;
+    min-height: 0;
+    border-left: none;
+}
+.row-fluid {
+    width: 100%;
+}
+
+/*Footer.*/
+footer{
+    margin-bottom: 10px;
+}
+
+/*Break line*/
+hr {
+    border-top: 1px solid black;
+}
+
+/*Image style*/
+.img-center {
+    margin: 0 auto;
+    display: block;
+}
+#logo-home {
+    width: 100%;
+    height: 100%;
+    margin-top: -51px;
+}
+
+/*Main page style*/
+.background-orange{
+    background-color: #D45828;
+}
+.background-blue{
+    background-color: #1BB1D1;
+}
+.spacious{
+    margin: 10px;
+}
+.magin-top-md{
+    margin-top: 17px;
+}
+.btn-wide{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*Your company information*/
+#form-information{
+
+}
+
+
+/*Your donation table*/
+#donation-table{
+    width: 650px;
+    margin: auto;
+}
+.cell-action{
+    width: 70px;
+}
+.table>tbody>tr>td{
+    border-top: none;
+}
+.table>thead>tr>th {
+    border-bottom: none;
+}
+
+/*Create a donation form*/
+.form-create{
+    margin: auto;
+    width: 350px;
+}
+.amount-record{
+    padding-top: 5px;
+}
+.removeNew{
+    padding-top: 9px;
+    color: red;
+}
+.form-control[readonly]{
+    cursor: text;
+}
+
+/*Client Table*/
+#client_table{
+    width: 750px;
+    margin: auto;
+}
+#client_table>thead>tr{
+    background-color: #808E8E;
+    color: white;
+}
+
+/*Invoices Table*/
+#invoice_table{
+    width: 750px;
+    margin: auto;
+}
+
+
+/*Your orders table*/
+#order-table{
+    width: 650px;
+    margin: auto;
+}
+#order-table>thead>tr{
+    background-color: #808E8E;
+}
+
+/*Your stats table*/
+#stat-table{
+    width: 350px;
+    margin: auto;
+}
+
+.padding-left-0{
+    padding-left: 0px;
+}
+
+/*Create Invoice*/
+.form-large{
+    margin: auto;
+    width: 740px;
+}
+#form_invoice{
+    margin: auto;
+    width: 810px;
+}
+#invoice_bill_to{
+    padding-top: 9px;
+}
+
+/*Table for items and descriptions*/
+#invoice_form_wrap{
+    width: 810px;
+    margin: auto;
+}
+#item_table{
+    width: 740px;
+    margin: auto;
+}
+#item_table>thead>tr{
+    background-color: #808E8E;
+    color: white;
+}
+#item_pay_table>thead>tr{
+    background-color: #808E8E;
+}
+#item_table select{
+    width: 40px;
+    padding: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    height: 32px;
+    background-color: black;
+    color: white;
+}
+#discount_type_span{
+    padding: 0px;
+}
+#item_table .item_amount{
+    padding-top: 15px;
+    padding-right: 5px;
+}
+#item_table .item_add{
+    height: 36px;
+    background-color: #BDBEC0;
+}
+.item_add {
+    height: 36px;
+    background-color: #BDBEC0;
+    padding: 8px;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+.background-dark-grey{
+    background-color: #808E8E;
+}
+#invoice_total{
+    height: 36px;
+    padding-top: 8px;
+    color: white;
+}
+#invoice_control{
+    width: 400px;
+}
+.btn-default {
+  color: white;
+  background-color: #808E8E;
+  border-color: #ccc;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #26b0d0 ;
+  border-color: #26b0d0;
+}
+.remove-invoice-item{
+    color: red;
+}
+
+/*Printable view for the invoice*/
+.invoice-printable{
+    background-color: #E6E3DD;
+    width: 810px;
+    margin: auto;
+    padding: 35px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.invoice-pay-printable{
+  background-color: #E6E3DD;
+  padding: 35px;
+  border-radius: 15px;
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+/*Your Payment table*/
+#payment_table{
+    width: 740px;
+    margin: auto;
+}
+#payment_table>thead>tr{
+    background-color: #808E8E;
+    color: white;
+}
+
+/*Other elements*/
+/*Bigger button*/
+.btn{
+    padding: 12px 20px;
+}
+.btn-sm{
+    padding: 5px 10px;
+}
+
+/*Upload button*/
+.upload {
+  border: #007a96 dashed 1px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 15px;
+}
+.upload input{
+    display: none;
+}
