@@ -68,7 +68,7 @@ $route['api/([a-z_]+)/(:any)/([a-z_]+)'] = 'api/$1/$3/$2';
 //res/function --> res/function 
 $route['api/([a-z_]+)/([a-z_]+)'] = 'api/$1/$2/'; 
 //res/id --> res/index/id/num 
-$route['api/([a-z_]+)/(:any)'] = 'api/$1/index/$2'; 
+$route['([a-z_]+)/(:any)'] = '$1/index/id/$2'; 
 //res/ --> //res/ 
 $route['api/([a-z_]+)'] = 'api/$1';
 

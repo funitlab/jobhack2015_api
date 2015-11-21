@@ -31,11 +31,8 @@ class Jobs extends REST_Controller {
         }
         $this->response($response, $code);
 
-//        $code = 200;
-//        $response = array('error' => "404 - Not found");
-//        $this->response($response, $code);
     }
-    
+     
     public function test_get() {
                $code = 200;
         $response = array('OK' => "Everything is going fine");

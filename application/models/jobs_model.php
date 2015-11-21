@@ -61,7 +61,26 @@ class Jobs_Model extends CI_Model{
         return $result;
     }
     
-    public function getJobList ($vnwJobList) {
+    public function getJobById($id = null) {
+        if ($id) {
+            $query = $this->db->get_where('jobs', array('id' => $id));
+            $result = $query->row_array();
+            
+            // Convert the skills, benefits string into array
+            if ($result) {
+                $result['skills'] = explode(";", $result['skills']);
+                $result['benefits'] = explode(";", $result['benefits']);
+            }
+            return $result;
+        } else {
+            $query = $this->db->get('jobs');
+            $result = $query->result_array();
+
+            return $result;
+        }
+    }
+    
+    private function getJobList ($vnwJobList) {
         $result = array();
         foreach ($vnwJobList as $job) {
             $item = array();
@@ -97,5 +116,64 @@ class Jobs_Model extends CI_Model{
         return $result;
     }
     
+    public function addJob($data){
+        
+        // Clean data
+        $skills = $data['skills'];
+        $data['skills'] = implode(";", $skills);
+        
+        $benefits = $data['benefits'];
+        $data['benefits'] = implode(";", $benefits);
+        
+        $result = $this->db->insert('jobs', $data);
+        
+        if ($result){
+            $companyId = $this->db->insert_id();
+            return $companyId;
+        } else {
+            return FALSE;
+        }        
+    }
+    
+    // TODO
+    public function updateCompany($id, $data){
+        
+        $query = $this->db->get_where('company', array('user_id'=>$id));
+        
+        if ($query->row_array()){
+            
+            $this->db->where('user_id', $id);
+            return $this->db->update('company', $data);
+        } else {
+            return $this->putCompany($id, $data);
+        }
+    }
+    
+    // TODO
+    public function putCompany($id, $data){
+        
+        $insertData = array_merge(array('user_id'=>$id),$data);
+
+        if ($this->db->insert('company', $insertData)){
+            return $id;
+        } else {
+            return false;
+        }
+    }
+    
+    // TODO : Catch delete constrain with foreign key.
+    public function deleteJob($id){
+        echo $id;
+        try {            
+            // Delete in jobs table.
+            $result = $this->db->delete('jobs', array('id'=>$id));
+            if ($this->db->affected_rows() === 0){
+                return FALSE;
+            }
+            return $result;
+        } catch (Exception $e){
+            return FALSE;
+        }
+    }
    
 }
