@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_parent_rounded_no_boder"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <volley.CircleNetworkImageView
+                android:id="@+id/imgJobIcon"
+                android:layout_width="@dimen/feed_item_profile_pic"
+                android:layout_height="@dimen/feed_item_profile_pic"
+                android:background="@drawable/ic_developer" >
+            </volley.CircleNetworkImageView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+                <widget.TimoTextView
+                    android:id="@+id/tvJobName"
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="OpenSans-Bold"
+                    android:text="fdsfds fdsfdsfds fdsfsdfs fdsfdsf fdsfdsf"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold" />
+
+                <widget.TimoTextView
+                    android:id="@+id/tvSalary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dfhjsdfhdksf"
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+                <widget.TimoTextView
+                    android:id="@+id/tvCompanyName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dfhjsdfhdksf dfsdf sfds sfdsf afddff dsfdsf sdfdsf "
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+                <include layout="@layout/view_stars" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <widget.TimoTextView
+            android:id="@+id/tvDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/feed_item_status_pad_top"
+            android:text="dfhjsdfhdksf" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/fp_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <widget.TimoButton
+                android:id="@+id/btnApply"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="OpenSans-Bold"
+                android:text="APPLY"
+                android:textColor="@color/guillotine_background"
+                android:textSize="12sp" />
+
+            <widget.TimoButton
+                android:id="@+id/btnRecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="OpenSans-Bold"
+                android:text="RECOMMEND"
+                android:textColor="@color/guillotine_background"
+                android:textSize="12sp" />
+
+            <widget.TimoButton
+                android:id="@+id/btnPin"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="OpenSans-Bold"
+                android:text="PIN"
+                android:textColor="@color/guillotine_background"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <volley.CircleNetworkImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/ic_highlight_off_black_36dp" />
+
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+<!-- GENERAL -->
+<string name="gr_lb_app_name"></string>
+
+<!-- HOME SCREEN -->
+<string name="hm_lb_settings">CÀI ĐẶT</string>
+<string name="hm_lb_profile">HỒ SƠ</string>
+<string name="hm_lb_pinned"></string>
+<string name="hm_lb_my_job"></string>
+<string name="hm_lb_browse"></string>
+</resources>

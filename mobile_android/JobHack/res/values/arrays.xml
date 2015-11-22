@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!-- SLIDER HOME MENU -->
+    <array name="slider_default_icons">
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_browse</item>
+        <item>@drawable/ic_pinned</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+    
+    <array name="slider_selected_icons">
+        <item>@drawable/ic_profile_active</item>
+        <item>@drawable/ic_browse_active</item>
+        <item>@drawable/ic_pinned_active</item>
+        <item>@drawable/ic_settings_active</item>
+    </array>
+
+    <string-array name="slider_titles">
+        <item>@string/hm_lb_profile</item>
+        <item>@string/hm_lb_browse</item>
+        <item>@string/hm_lb_pinned</item>
+        <item>@string/hm_lb_settings</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llBrowse"
+    style="@style/LinearLayout.GuillotineItem"
+    android:paddingTop="@dimen/guillotine_small_margin"
+    android:paddingBottom="@dimen/guillotine_small_margin" >
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        style="@style/ImageView.GuillotineItem"
+        android:src="@drawable/ic_browse_active" />
+
+    <widget.CanaroTextView
+        android:id="@+id/tvTitle"
+        style="@style/TextView.GuillotineItem.Selected"
+        android:text="@string/hm_lb_browse" />
+
+</LinearLayout>

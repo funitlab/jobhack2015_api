@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/feed_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/feed_item_margin_bottom"
+        android:layout_marginTop="@dimen/feed_item_margin_top"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <volley.CircleNetworkImageView
+                android:id="@+id/imgJobIcon"
+                android:layout_width="@dimen/feed_item_profile_pic"
+                android:layout_height="@dimen/feed_item_profile_pic"
+                android:background="@drawable/ic_developer" >
+            </volley.CircleNetworkImageView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+                <widget.TimoTextView
+                    android:id="@+id/tvJobName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold" />
+
+                <widget.TimoTextView
+                    android:id="@+id/tvSalary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dfhjsdfhdksf"
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+                <widget.TimoTextView
+                    android:id="@+id/tvCompanyName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dfhjsdfhdksf dfsdf sfds sfdsf afddff dsfdsf sdfdsf "
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+                <include layout="@layout/view_stars" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <widget.TimoTextView
+            android:id="@+id/tvDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/feed_item_status_pad_top"
+            android:text="dfhjsdfhdksf" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/feed_item_margin_top"
+            android:layout_marginTop="@dimen/feed_item_margin_top"
+            android:background="@color/fp_uncomplete" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <widget.TimoTextView
+                    android:id="@+id/tvSent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sent"
+                    android:textColor="@color/fp_uncomplete"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+                <ImageView
+                    android:id="@+id/imgSent"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="@dimen/feed_item_margin_top"
+                    android:background="@color/fp_sent" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <widget.TimoTextView
+                    android:id="@+id/tvReviewed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Reviewed"
+                    android:textColor="@color/fp_uncomplete"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+                <ImageView
+                    android:id="@+id/imgReviewed"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="@dimen/feed_item_margin_top"
+                    android:background="@color/fp_uncomplete" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <widget.TimoTextView
+                    android:id="@+id/tvContacted"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Contacted"
+                    android:textColor="@color/fp_uncomplete"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+                <ImageView
+                    android:id="@+id/imgContacted"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="@dimen/feed_item_margin_top"
+                    android:background="@color/fp_uncomplete" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <widget.TimoTextView
+                    android:id="@+id/tvInterviewed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Interviewed"
+                    android:textColor="@color/fp_uncomplete"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+                <ImageView
+                    android:id="@+id/imgInterviewed"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="@dimen/feed_item_margin_top"
+                    android:background="@color/fp_uncomplete" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <widget.TimoTextView
+                    android:id="@+id/tvHired"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Hired"
+                    android:textColor="@color/fp_uncomplete"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+                <ImageView
+                    android:id="@+id/imgHired"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="@dimen/feed_item_margin_top"
+                    android:background="@color/fp_uncomplete" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_parent_rounded_no_boder"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+                <widget.TimoTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/black" />
+
+                <widget.TimoTextView
+                    android:id="@+id/tvDes"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="TextView" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <RatingBar
+                        android:id="@+id/ratingBar1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:max="5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <widget.TimoButton
+                android:id="@+id/btnApply"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:fontFamily="OpenSans-Bold"
+                android:text="NEVER"
+                android:textColor="@color/guillotine_background"
+                android:textSize="12sp" />
+
+            <widget.TimoButton
+                android:id="@+id/btnApply"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btnApply"
+                android:background="@android:color/transparent"
+                android:fontFamily="OpenSans-Bold"
+                android:text="NEVER"
+                android:textColor="@color/guillotine_background"
+                android:textSize="12sp" />
+
+            <widget.TimoButton
+                android:id="@+id/btnPin"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="OpenSans-Bold"
+                android:text="OK"
+                android:textColor="@color/guillotine_background"
+                android:textSize="12sp" />
+
+            <widget.TimoButton
+                android:id="@+id/btnRecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btnPin"
+                android:background="@android:color/transparent"
+                android:fontFamily="OpenSans-Bold"
+                android:text="NOT NOW"
+                android:textColor="@color/guillotine_background"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

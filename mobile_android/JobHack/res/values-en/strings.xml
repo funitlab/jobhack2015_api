@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+<!-- GENERAL -->
+<string name="gr_lb_app_name">JOB HACK</string>
+
+<!-- HOME SCREEN -->
+<string name="hm_lb_settings">SETTINGS</string>
+<string name="hm_lb_profile">PROFILE</string>
+<string name="hm_lb_pinned">PINNED</string>
+<string name="hm_lb_my_job">MY JOB</string>
+<string name="hm_lb_browse">BROWSE</string>
+</resources>

@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Guillotine screen dimens -->
+    <dimen name="guillotine_small_margin">12dp</dimen>
+    <dimen name="guillotine_medium_margin">48dp</dimen>
+    <dimen name="guillotine_large_margin">100dp</dimen>
+    <dimen name="guillotine_divider_height">40dp</dimen>
+    <dimen name="guillotine_item_text_size">20sp</dimen>
+    <dimen name="guillotine_actionbar_background_view_height">35dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="feed_item_margin">10dp</dimen>
+    <dimen name="feed_item_margin_top">5dp</dimen>
+    <dimen name="feed_item_margin_bottom">5dp</dimen>
+    <dimen name="feed_item_padding_top_bottom">20dp</dimen>
+    <dimen name="feed_item_padding_left_right">15dp</dimen>
+    <dimen name="feed_item_profile_pic">50dp</dimen>
+    <dimen name="feed_item_profile_info_padd">10dp</dimen>
+    <dimen name="feed_item_profile_name">15dp</dimen>
+    <dimen name="feed_item_timestamp">13dp</dimen>
+    <dimen name="feed_item_status_pad_left_right">15dp</dimen>
+    <dimen name="feed_item_status_pad_top">13dp</dimen>
+    <dimen name="feed_item_corner_radius">3dp</dimen>
+    <dimen name="feed_item_border_width">1dp</dimen>
+    <dimen name="cpb_stroke_width">4dp</dimen>
+
+    <declare-styleable name="CircularProgressButton">
+        <attr name="cpb_selectorIdle" format="reference" />
+        <attr name="cpb_selectorComplete" format="reference" />
+        <attr name="cpb_selectorError" format="reference" />
+        <attr name="cpb_textComplete" format="string" />
+        <attr name="cpb_textIdle" format="string" />
+        <attr name="cpb_textError" format="string" />
+        <attr name="cpb_textProgress" format="string" />
+        <attr name="cpb_colorProgress" format="color" />
+        <attr name="cpb_colorIndicator" format="color" />
+        <attr name="cpb_colorIndicatorBackground" format="color" />
+        <attr name="cpb_iconError" format="reference" />
+        <attr name="cpb_iconComplete" format="reference" />
+        <attr name="cpb_cornerRadius" format="dimension" />
+        <attr name="cpb_paddingProgress" format="dimension" />
+    </declare-styleable>
+
+</resources>

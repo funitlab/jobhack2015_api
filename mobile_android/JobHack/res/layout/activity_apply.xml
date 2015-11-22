@@ -1,0 +1,118 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.funitlab.jobhack.ApplyActivity" >
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/guillotine_background">
+
+        <ImageButton
+            android:id="@+id/imgbClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_clear_white_24dp" />
+        
+        <ImageButton
+            android:id="@+id/imgbDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_accept" />
+        
+        <TextView 
+            android:id="@+id/tvApplyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Apply"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="'Choose a job you love, and you will never have to work a day in your life.'" />
+
+    <TextView
+        android:id="@+id/tvJobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#222222"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Java Dev" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/document_add"/>
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#333333"
+            android:background="@android:color/transparent"
+            android:text="Upload the CV"/>
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/square_linkedin"/>
+        <EditText 
+            android:id="@+id/edtLink"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/btn_continue_new_payee"/>
+        
+    </LinearLayout>
+
+     <EditText
+         android:id="@+id/edtCoverLetter"
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:layout_margin="10dp"
+         android:padding="5dp"
+         android:background="@drawable/btn_continue_new_payee"
+         android:ems="10"
+         android:textSize="14dp"
+         android:gravity="left"
+         android:hint="You can always impress the employer by a good cover letter to introduce yourself or your referal"
+         android:inputType="textMultiLine" >
+
+     </EditText>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="guillotine_background">#2196F3</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#FFFFFF</color>
+    <color name="default_item_color">#bfbfbf</color>
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="background_color">#FF5E5B94</color>
+    <color name="tabbar_main">#FF4AD5BC</color>
+    <color name="tabbar_secondly">#FF54B4B4</color>
+
+    <!-- PROFILE -->
+    <color name="fp_avatar_boder">#E3F2FD</color>
+    <color name="fp_line">#1a1d1d26</color>
+    <color name="fp_subtitle">#801d1d26</color>
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+    <color name="bg_btn_gray_border">#78918c9e</color>
+    <color name="fp_sent">#C5E1A5</color>
+    <color name="fp_review">#AED581</color>
+    <color name="fp_contacted">#8BC34A</color>
+    <color name="fp_interviewed">#689F38</color>
+    <color name="fp_hired">#33691E</color>
+    <color name="fp_failt">#F44336</color>
+    <color name="fp_uncomplete">#BDBDBD</color>
+    <color name="lg_btn_facebook">#486aa1</color>
+    <color name="lg_btn_google">#e34f42</color>
+    <color name="lg_btn_linkedin">#0092ba</color>
+
+</resources>
